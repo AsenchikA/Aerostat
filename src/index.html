@@ -1,24 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  @@include('_include/page-head.html')
-  <title>Document</title>
-</head>
-<body>
-  @@include('img/sprite-svg.svg')
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
 
-  <svg width="24" height="24"><use xlink:href="#loupe"></use></svg>
-  <svg width="24" height="24"><use xlink:href="#rgb"></use></svg>
-  <svg width="24" height="24"><use xlink:href="#tea-cup"></use></svg>
+    <header class="page-header">
+      <div class="page-header__container">
+        <div class="page-header__row">
+          <div class="logo"><img src="" alt=""></div>
+          <ul class="main-nav">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Кто мы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">План полета</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Заказать</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Команда</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="promo">
+        <div class="promo__container">
+          <h1 class="promo__title">Организация полетов на воздушных шарах</h1>
+          <ul class="promo__subtitle-list">
+            <li class="promo__subtitle-item">
+              <h2 class="promo__subtitle-content">Удивительный опыт</h2>
+            </li>
+            <li class="promo__subtitle-item">
+              <h2 class="promo__subtitle-content">Удивительная экскурсия</h2>
+            </li>
+            <li class="promo__subtitle-item">
+              <h2 class="promo__subtitle-content">Запоминающийся подарок</h2>
+            </li>
+            <li class="promo__subtitle-item">
+              <h2 class="promo__subtitle-content">Романтическая прогулка</h2>
+            </li>
+          </ul>
+          <a href="#" class="btn-more"></a>
+        </div>
+      </div>
 
 
-  <div class="chrome"></div>
-  <div class="github-logo"></div>
-  <div class="kraken"></div>
-  <div class="male-and-female"></div>
-  <div class="musica-searcher"></div>
-  <div class="placeholder"></div>
+      <div class="advantages">
+        <div class="advantages__container">
+          <ul class="advantages-list">
+            <li class="advantages-list__item">Современный надежный шар</li>
+            <li class="advantages-list__item">Обучение пилотированию</li>
+            <li class="advantages-list__item">Фотосъемка в полете</li>
+            <li class="advantages-list__item">Потрясающие виды</li>
+          </ul>
+        </div>
+      </div>
 
-  <p>text</p>
-</body>
+
+      <div class="short">
+        <div class="short__container">
+          <h3 class="short__title">Вкратце</h3>
+          <div class="short__text">
+            <p></p>
+            <p></p>
+          </div>
+          <div class="short-video"></div>
+        </div>
+      </div>
+
+
+      <div class="gallery">
+        <div class="gallery__container">
+          <h3 class="gallery__title">Галерея</h3>
+          <div class="gallery__slider">
+            <img src="" alt="" class="gallery__item">
+            <img src="" alt="" class="gallery__item">
+            <img src="" alt="" class="gallery__item">
+            <img src="" alt="" class="gallery__item">
+            <img src="" alt="" class="gallery__item">
+            <img src="" alt="" class="gallery__item">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="about">
+        <div class="about__container">
+          <div class="about__title">Как проходят полеты</div>
+          <ul class="about__list">
+            <li class="about__item">Взлет</li>
+            <li class="about__item">Набираем высоту</li>
+            <li class="about__item">Летаем</li>
+            <li class="about__item">Снижаемся</li>
+            <li class="about__item">Садимся</li>
+          </ul>
+        </div>
+        <div class="counter">
+          <div class="counter__container">
+            <div class="counter__row">
+              <div class="counter__text"></div>
+              <div class="counter__numbers"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="cost">
+        <div class="cost__container">
+          <div class="cost__row">
+            <div class="cost__title"></div>
+            <div class="cost__text">
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+            <form action="" class="cost__form">
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="questions-and-pay">
+        <div class="questions-and-pay__container">
+          <div class="questions-and-pay__row">
+            <div class="questions">
+              <div class="questions__title">Частые вопросы</div>
+              <ul class="questions__list">
+                <li class="questions__item">Что взять с собой в полёт
+                  <div class="questions__description">
+                    <p>Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос с горячим чаем. А мы обязательно дадим вам теплые пледы</p>
+                  </div>
+                </li>
+                <li class="questions__item">Что, если мы улетим не в ту сторону?
+                  <div class="questions__description">Каждый шар оснащен датчиками GPS, и все его перемещения фиксируются с точностью до метра, потеряться просто не получится. А наши пилоты такой ситуации не допустят вообще</div>
+                </li>
+                <li class="questions__item">Что делать, если в самолёте станет плохо?
+                  <div class="questions__description">В наших аптечках заготовлены в больших количествах разные лекарства, в том числе средства от укачивания, пакетики, а каждый пилот прошел специальную подготовку по оказанию первой помощи. В экстренных ситуациях сразу же совершим посадку. Мы не дадим вам оказаться в беде.</div>
+                </li>
+                <li class="questions__item">А полёт - это действительно так здорово?
+                  <div class="questions__description">Это в тысячу раз лучше шоколада</div>
+                </li>
+              </ul>
+            </div>
+            <div class="pay">
+              <div class="pay__title"></div>
+              <div class="pay__ways">
+                <input class="pay__item" type="radio" name="pay" id="pay--1" checked>
+                <label for="#pay--1">Наличными</label>
+                <input class="pay__item" type="radio" name="pay" id="pay--2">
+                <label for="#pay--2">Курьеру</label>
+                <input class="pay__item" type="radio" name="pay" id="pay--3">
+                <label for="#pay--3">Картой</label>
+
+                <div class="pay__description" id="pay-description--1">
+                  <p class="pay__text">Вы можете оплатить услугу, приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
+                  <ul class="pay_list">
+                    <li>по телефону: <em>+7 (812) 640-19-39</em></li>
+                    <li>или по почте: <a class="pay__mail" href="mailto:mnebyvnebo@gmail.com">mnebyvnebo@gmail.com</a></li>
+                  </ul>
+                  <p class="pay__text">Оплачивая услугу в офисе, Вы получаете все документы, подтверждающие оплату.</p>
+                </div>
+                <div class="pay__description" id="pay-description--2">
+                  <p class="pay__text">Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
+                  <ul class="pay_list">
+                    <li>по телефону: <em>+7 (812) 640-19-39</em></li>
+                    <li>или по почте: <a class="pay__mail" href="mailto:mnebyvnebo@gmail.com">mnebyvnebo@gmail.com</a></li>
+                  </ul>
+                  <p class="pay__text">Оплачивая услугу курьером, Вы получаете все документы, подтверждающие оплату.</p>
+                </div>
+                <div class="pay__description" id="pay-description--3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="numbers">
+        <div class="numbers__container">
+          <div class="numbers__row">
+            <ul class="numbers__list">
+              <li class="numbers__item">
+                <div class="numbers__number">700</div>
+                <div class="numbers__text">Полётов в год</div>
+              </li>
+              <li class="numbers__item">
+                <div class="numbers__number">3000</div>
+                <div class="numbers__text">Средняя дальность в метрах</div>
+              </li>
+              <li class="numbers__item">
+                <div class="numbers__number">3</div>
+                <div class="numbers__text">Воздушных шара</div>
+              </li>
+              <li class="numbers__item">
+                <div class="numbers__number">12</div>
+                <div class="numbers__text">Человек в команде</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="team">
+        <div class="team__container">
+          <div class="team__row">
+            <div class="trainer">
+              <div class="trainer__photo"><img src="" alt=""></div>
+              <p class="trainer__name">Мария Мариева</p>
+              <p class="trainer__position">Старший пилот</p>
+            </div>
+            <div class="trainer">
+              <div class="trainer__photo"><img src="" alt=""></div>
+              <p class="trainer__name">Надежда Надеждова</p>
+              <p class="trainer__position">Второй пилот</p>
+            </div>
+            <div class="trainer">
+              <div class="trainer__photo"><img src="" alt=""></div>
+              <p class="trainer__name">Ирина Иринова</p>
+              <p class="trainer__position">Авиадиспетчер</p>
+            </div>
+            <div class="trainer">
+              <div class="trainer__photo"><img src="" alt=""></div>
+              <p class="trainer__name">Алена Аленова</p>
+              <p class="trainer__position">Авиатехник</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews">
+        <div class="reviews__container">
+          <div class="reviews-slider">
+            <div class="reviews-item">
+              <div class="reviews-item__photo"><img src="" alt=""></div>
+              <p class="reviews-item__name">Ольга Алексеева</p>
+              <p class="reviews-item__text">Оооо, это было чудесно!!! Я не знала, что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
+            </div>
+            <div class="reviews-item">
+              <div class="reviews-item__photo"><img src="" alt=""></div>
+              <p class="reviews-item__name">Артем Рыбкин</p>
+              <p class="reviews-item__text">Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Спасибо вам, нам все понравилось.</p>
+            </div>
+            <div class="reviews-item">
+              <div class="reviews-item__photo"><img src="" alt=""></div>
+              <p class="reviews-item__name">Ольга Алексеева</p>
+              <p class="reviews-item__text">Оооо, это было чудесно!!! Я не знала, что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
+            </div>
+            <div class="reviews-item">
+              <div class="reviews-item__photo"><img src="" alt=""></div>
+              <p class="reviews-item__name">Артем Рыбкин</p>
+              <p class="reviews-item__text">Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Спасибо вам, нам все понравилось.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts">
+        <div class="contacts__container">
+          <div class="contacts__row">
+            <div class="aeroport">
+              <p class="aeroport__message">Запишите адрес аэропорта</p>
+              <p class="aeroport__address">Всеволжск, улица Аэродромная 19а</p>
+            </div>
+            <div class="office">
+              <p class="office__title">Наш офис в Питере:</p>
+              <p class="office__address">Литейный 14Б<br/>12:00 - 19:00</p>
+              <p class="office__phone">746-67-33</p>
+            </div>
+            <div class="office">
+              <p class="office__title">Наш офис во Всеволожске:</p>
+              <p class="office__address">Аэродромная 19А<br/>12:00 - 19:00</p>
+              <p class="office__phone">746-67-33</p>
+            </div>
+            <div class="social">
+              <a class="social-mail" href="mailto:mnebyvnebo@gmail.com">mnebyvnebo@gmail.com</a>
+              <div class="social-networks">
+                <a href="#" class="social-networks__item">
+                  <svg></svg>
+                </a>
+                <a href="#" class="social-networks__item">
+                  <svg></svg>
+                </a>
+                <a href="#" class="social-networks__item">
+                  <svg></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="page-footer">
+        <div class="page-footer__container">
+          <div class="page-footer__row">
+            <div class="logo"><img src="" alt=""></div>
+            <ul class="main-nav">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Кто мы</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">План полета</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Заказать</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Команда</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>

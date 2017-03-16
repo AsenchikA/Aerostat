@@ -1,0 +1,60 @@
+/*
+Файл для отдельной подгрузки WOFF2-версии файла JS-ом.
+Будет обработан при сборке: в url() будет подставлена base64 кодированная версия указанного файла
+*/
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('firasans-bold-webfont.woff2') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('firasans-bolditalic-webfont.woff2') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('firasans-italic-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('firasans-light-webfont.woff2') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('firasans-lightitalic-webfont.woff2') format('woff');
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('firasans-medium-webfont.woff2') format('woff');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('firasans-mediumitalic-webfont.woff2') format('woff');
+  font-weight: medium;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: url('firasans-regular-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

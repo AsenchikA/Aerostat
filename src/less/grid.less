@@ -16,8 +16,8 @@
 
 .row {
   box-sizing: border-box;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: -12px;
+  margin-right: -12px;
 
   @media (min-width: @screen-sm){
     margin-left: 13px;
@@ -36,7 +36,15 @@
   }
 }
 
-[class*="col"] {
+.col-xs-(@n) { width: calc(@n / 6 * 100%); }
+.col-sm-(@n) { width: calc(@n / 8 * 100%); }
+.col-lg-(@n) { width: calc(@n / 12 * 100%); }
+
+.col-offset-xs-(@n) { margin-left: calc(@n / 6 * 100%); }
+.col-offset-sm-(@n) { margin-left: calc(@n / 8 * 100%); }
+.col-offset-lg-(@n) { margin-left: calc(@n / 12 * 100%); }
+
+.col {
   float: left;
   padding-left: 12px;
   padding-right: 12px;
@@ -52,11 +60,10 @@
   }
 }
 
-.col-xs-(@n) { width: calc(@n / 6 * 100%); }
-.col-sm-(@n) { width: calc(@n / 8 * 100%); }
-.col-lg-(@n) { width: calc(@n / 12 * 100%); }
-
-.col-offset-xs-(@n) { margin-left: calc(@n / 6 * 100%); }
-.col-offset-sm-(@n) { margin-left: calc(@n / 8 * 100%); }
-.col-offset-lg-(@n) { margin-left: calc(@n / 12 * 100%); }
-
+.clearfix {
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

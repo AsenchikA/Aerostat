@@ -14,8 +14,12 @@
   }
 
   &__arrow {
-    display: block;
-    margin: 0 auto;
-    width: 18px;
+    display: none;
+
+    @media (min-width: @screen-sm) {
+      display: block;
+      margin: 0 auto;
+      width: 18px;
+    }
   }
 }

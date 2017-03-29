@@ -5,20 +5,6 @@
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('firasans-bold-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'FiraSans';
-  src: url('firasans-bolditalic-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'FiraSans';
   src: url('firasans-italic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: italic;
@@ -26,30 +12,9 @@
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('firasans-light-webfont.woff') format('woff');
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'FiraSans';
-  src: url('firasans-lightitalic-webfont.woff') format('woff');
-  font-weight: lighter;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'FiraSans';
   src: url('firasans-medium-webfont.woff') format('woff');
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'FiraSans';
-  src: url('firasans-mediumitalic-webfont.woff') format('woff');
-  font-weight: medium;
-  font-style: italic;
 }
 
 @font-face {

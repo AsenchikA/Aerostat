@@ -4,6 +4,27 @@ body {
   font-family: @font-family;
   color: @text-color;
 }
+
 * {
   box-sizing: border-box;
+}
+
+.clearfix {
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.bottom-line {
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 62px;
+    height: 0;
+    border-bottom: 6px solid #3e98d7;
+  }
 }

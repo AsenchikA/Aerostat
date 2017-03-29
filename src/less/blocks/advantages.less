@@ -1,3 +1,143 @@
 .advantages {
-  
+  padding-top: 40px;
+
+  @media (min-width: @screen-sm) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: @screen-lg) {
+    padding-top: 100px;
+  }
+
+  &__container {
+    .container;
+  }
+
+  &__list {
+    list-style: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    font-size: @text-size;
+    font-weight: 600;
+    color: @gray;
+
+    @media (min-width: @screen-sm) {
+      .row;
+    }
+  }
+
+  &__item {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media (min-width: @screen-sm) {
+      .col;
+      .col-sm-(4);
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: @screen-lg) {
+      .col-lg-(3);
+      margin-bottom: 0;
+    }
+
+    &:first-child {
+      @media (min-width: @screen-lg) {
+        position: relative;
+        top: -55px;
+      }
+    }
+
+    &:last-child {
+      @media (min-width: @screen-lg) {
+        position: relative;
+        top: -55px;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding-left: 56px;
+
+    @media (min-width: @screen-sm) {
+      padding-left: 63px;
+    }
+
+    @media (min-width: @screen-lg) {
+      padding-left: 92px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+    fill: #d83a3a;
+
+    &--ballon {
+      width: 32px;
+      height: 32px;
+
+      @media (min-width: @screen-sm) {
+        width: 37px;
+        height: 38px;
+      }
+
+      @media (min-width: @screen-lg) {
+        width: 56px;
+        height: 58px;
+      }
+    }
+
+    &--pilot {
+      width: 39px;
+      height: 18px;
+
+      @media (min-width: @screen-sm) {
+        width: 52px;
+        height: 19px;
+      }
+
+      @media (min-width: @screen-lg) {
+        width: 75px;
+        height: 28px;
+      }
+    }
+
+    &--photo {
+      width: 34px;
+      height: 26px;
+
+      @media (min-width: @screen-sm) {
+        width: 39px;
+        height: 30px;
+      }
+
+      @media (min-width: @screen-lg) {
+        width: 65px;
+        height: 50px;
+      }
+    }
+
+    &--plans {
+      width: 39px;
+      height: 18px;
+
+      @media (min-width: @screen-sm) {
+        width: 49px;
+        height: 23px;
+      }
+
+      @media (min-width: @screen-lg) {
+        width: 72px;
+        height: 34px;
+      }
+    }
+  }
 }
+

@@ -1,0 +1,126 @@
+.cost-form {
+
+  @media (min-width: @screen-sm) {
+    padding: 25px 67px;
+    background: url(../img/cost-form.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: @screen-lg) {
+    .col;
+    .col-lg-(6);
+    .col-offset-lg-(1);
+    padding: 0;
+    background: @white;
+  }
+
+  &__container {
+    .container;
+
+    @media (min-width: @screen-lg) {
+      width: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__content {
+    .clearfix;
+    background-color: @white;
+
+    @media (min-width: @screen-sm) {
+      width: 584px;
+      margin: 0 auto;
+      padding: 26px;
+      border-radius: 3px;
+    }
+
+    @media (min-width: @screen-lg) {
+      padding: 0;
+      width: auto;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    font-size: @text-size;
+    color: @gray;
+
+    @media (min-width: @screen-sm) {
+      float: right;
+      width: 325px;
+      margin-bottom: 20px;
+    }
+
+    &--name {
+      background-image: url(../img/cost-form__item--name.png);
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+    }
+
+    &--phone {
+      background-image: url(../img/cost-form__item--phone.png);
+      background-repeat: no-repeat;
+      background-position: 10px 10px;
+    }
+  }
+
+  &__item-text {
+    display: block;
+    margin: 15px 0;
+    clear: left;
+    font-size: @text-size;
+    color: @gray;
+
+    @media (min-width: @screen-sm) {
+      float: left;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__sum {
+    float: left;
+    margin-top: 30px;
+
+    @media (min-width: @screen-sm) {
+      margin-top: 40px;
+    }
+  }
+
+  &__sum-description {
+    display: none;
+    font-weight: bold;
+    color: @gray;
+    line-height: 50px;
+
+    @media (min-width: @screen-sm) {
+      display: inline;
+    }
+  }
+
+  &__counter {
+    font-size: 28px;
+    color: #f97e7e;
+    text-transform: uppercase;
+
+  }
+
+  &__btn{
+    float: right;
+    margin-top: 30px;
+    padding:14px 0;
+    width: 160px;
+    text-align: center;
+    font-size: @text-size;
+    color: @white;
+    background-color: #46b0dc;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

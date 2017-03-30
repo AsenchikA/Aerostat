@@ -8,6 +8,7 @@ $(document).ready(function(){
   );
 
   // бургер в header
+
   var toggler = document.getElementById('toggler');
   toggler.onclick = function(e){
     e.preventDefault();
@@ -15,6 +16,8 @@ $(document).ready(function(){
 
     document.getElementById('nav').classList.toggle('main-nav--visible');
   };
+
+  //галерея
 
   $('#gallery__slider').owlCarousel({
     loop: true,
@@ -30,6 +33,8 @@ $(document).ready(function(){
       }
     }
   });
+
+  //счетчик "До ближайшего полета осталось:"
 
   var deadline = '2017-12-31';
   setInterval(function(){

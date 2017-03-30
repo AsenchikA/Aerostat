@@ -148,16 +148,36 @@
           <div class="cost__row">
             <div class="cost-description">
               <div class="cost-description__container">
-                <div class="cost__title"></div>
-                <div class="cost__text">
-                  <p></p>
-                  <p></p>
-                  <p></p>
+                <div class="cost-description__title">Рассчитать стоимость</div>
+                <div class="cost-description__text">
+                  <p>Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
+                  <p>Оболочка начинает заполняться теплым воздухом, и аэростат делает первый "вздох".</p>
+                  <p>Выбирайте, куда мы полетим!</p>
                 </div>
               </div>
             </div>
             <div class="cost-form">
-              <form action="" class="cost-form__content"></form>
+              <div class="cost-form__container">
+                <form action="" class="cost-form__content">
+
+                  <label for="cost-form__item--route" class="cost-form__item-text">Маршрут полета:</label>
+                  <input type="text" class="cost-form__item" id="cost-form__item--route">
+
+                  <label for="cost-form__item--persons" class="cost-form__item-text">Количество человек:</label>
+                  <input type="text" class="cost-form__item" id="cost-form__item--persons">
+
+                  <label for="cost-form__item--name" class="cost-form__item-text">Имя и Фамилия:</label>
+                  <input type="text" class="cost-form__item cost-form__item--name" id="cost-form__item--name">
+
+                  <label for="cost-form__item--phone" class="cost-form__item-text">Телефон:</label>
+                  <input type="text" class="cost-form__item cost-form__item--phone" id="cost-form__item--phone">
+
+                  <div class="cost-form__sum"><span class="cost-form__sum-description">Стоимость: </span><span class="cost-form__counter">9000 Р</span></div>
+
+                  <input class="cost-form__btn" type="button" value="Полетели!">
+
+                </form>
+              </div>
             </div>
           </div>
         </div>

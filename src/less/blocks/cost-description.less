@@ -1,0 +1,48 @@
+.cost-description {
+  padding-top: 55px;
+  margin-bottom: 50px;
+
+  @media (min-width: @screen-lg) {
+    padding-top: 0;
+    margin-bottom: 0;
+    .col;
+    .col-lg-(5);
+  }
+
+  &__container {
+    .container;
+
+    @media (min-width: @screen-lg) {
+      width: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-top: 0;
+    font-size: @font-size-h1;
+    font-weight: 500;
+    color: @gray;
+
+    @media (min-width: @screen-sm) {
+      font-size: @font-size-h1 + 4px;
+    }
+
+    .bottom-line;
+  }
+
+  &__text {
+    display: none;
+
+    @media (min-width: @screen-sm) {
+      display: block;
+      margin-top: 50px;
+      font-size: @text-size;
+      font-style: italic;
+      color: @gray;
+      text-align: left;
+    }
+  }
+}

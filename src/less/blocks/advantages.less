@@ -13,6 +13,12 @@
     .container;
   }
 
+  &__row {
+    @media (min-width: @screen-sm) {
+      .row;
+    }
+  }
+
   &__list {
     list-style: none;
     -webkit-margin-before: 0;
@@ -21,10 +27,6 @@
     font-size: @text-size;
     font-weight: 600;
     color: @gray;
-
-    @media (min-width: @screen-sm) {
-      .row;
-    }
   }
 
   &__item {

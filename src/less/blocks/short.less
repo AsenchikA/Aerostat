@@ -13,6 +13,12 @@
     .container;
   }
 
+  &__row {
+    @media (min-width: @screen-lg) {
+      .row;
+    }
+  }
+
   &__description {
     @media (min-width: @screen-lg) {
       .col;
@@ -24,7 +30,7 @@
     position: relative;
     margin-top: 0;
     font-size: @font-size-h1;
-    font-weight: 600;
+    font-weight: 500;
     color: @gray;
 
     @media (min-width: @screen-sm) {

@@ -1,0 +1,38 @@
+.team {
+  padding-top: 55px;
+
+  @media (min-width: @screen-lg) {
+    padding-top: 95px;
+  }
+
+  &__container {
+    .container;
+  }
+
+  &__row {
+    @media (min-width: @screen-sm) {
+      .row;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: @font-size-h3;
+    font-weight: 500;
+    color: @gray;
+    text-align: center;
+    .bottom-line;
+
+    @media (min-width: @screen-sm) {
+      margin-bottom: 85px;
+      font-size: @font-size-h3 + 4px;
+    }
+
+    &:after {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}

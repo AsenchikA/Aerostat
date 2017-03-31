@@ -14,9 +14,9 @@
         <div class="page-header__row">
           <div class="logo">Монгольфьеркин и КО</div>
           <ul class="main-nav" id="nav">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Кто мы</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">План полета</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#short">Кто мы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#gallery">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#about">План полета</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Заказать</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Команда</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
@@ -85,7 +85,7 @@
       </div>
 
 
-      <div class="short">
+      <div class="short" id="short">
         <div class="short__container">
           <div class="short__row">
             <div class="short__description">
@@ -101,7 +101,7 @@
       </div>
 
 
-      <div class="gallery">
+      <div class="gallery" id="gallery">
         <div class="gallery__container">
           <h3 class="gallery__title">Галерея</h3>
           <div class="gallery__slider owl-carousel" id="gallery__slider">
@@ -115,7 +115,7 @@
       </div>
 
 
-      <div class="about">
+      <div class="about" id="about">
         <div class="about__container">
           <h3 class="about__title">Как проходят полеты</h3>
           <ul class="about__list">
@@ -253,24 +253,22 @@
       <div class="numbers">
         <div class="numbers__container">
           <div class="numbers__row">
-            <ul class="numbers__list">
-              <li class="numbers__item">
+              <div class="numbers__item">
                 <div class="numbers__number">700</div>
                 <div class="numbers__text">Полётов в год</div>
-              </li>
-              <li class="numbers__item">
+              </div>
+              <div class="numbers__item">
                 <div class="numbers__number">3000</div>
                 <div class="numbers__text">Средняя дальность в метрах</div>
-              </li>
-              <li class="numbers__item">
+              </div>
+              <div class="numbers__item">
                 <div class="numbers__number">3</div>
                 <div class="numbers__text">Воздушных шара</div>
-              </li>
-              <li class="numbers__item">
+              </div>
+              <div class="numbers__item">
                 <div class="numbers__number">12</div>
                 <div class="numbers__text">Человек в команде</div>
-              </li>
-            </ul>
+              </div>
           </div>
         </div>
       </div>
@@ -280,24 +278,32 @@
           <div class="team__title">Команда инструкторов</div>
           <div class="team__row">
             <div class="trainer">
-              <div class="trainer__photo"><img src="" alt=""></div>
-              <p class="trainer__name">Мария Мариева</p>
-              <p class="trainer__position">Старший пилот</p>
+              <div class="trainer__photo trainer__photo--pilot"><img src="img/trainer__photo--1.jpg" alt="Фото инструктора"></div>
+              <div class="trainer__info">
+                <p class="trainer__name">Мария Мариева</p>
+                <p class="trainer__position">Старший пилот</p>
+              </div>
             </div>
             <div class="trainer">
-              <div class="trainer__photo"><img src="" alt=""></div>
-              <p class="trainer__name">Надежда Надеждова</p>
-              <p class="trainer__position">Второй пилот</p>
+              <div class="trainer__photo trainer__photo--pilot"><img src="img/trainer__photo--2.jpg" alt="Фото инструктора"></div>
+              <div class="trainer__info">
+                <p class="trainer__name">Надежда Надеждова</p>
+                <p class="trainer__position">Второй пилот</p>
+              </div>
             </div>
             <div class="trainer">
-              <div class="trainer__photo"><img src="" alt=""></div>
-              <p class="trainer__name">Ирина Иринова</p>
-              <p class="trainer__position">Авиадиспетчер</p>
+              <div class="trainer__photo trainer__photo--dispatcher"><img src="img/trainer__photo--3.jpg" alt="Фото инструктора"></div>
+              <div class="trainer__info">
+                <p class="trainer__name">Ирина Иринова</p>
+                <p class="trainer__position">Авиадиспетчер</p>
+              </div>
             </div>
             <div class="trainer">
-              <div class="trainer__photo"><img src="" alt=""></div>
-              <p class="trainer__name">Алена Аленова</p>
-              <p class="trainer__position">Авиатехник</p>
+              <div class="trainer__photo trainer__photo--technician"><img src="img/trainer__photo--4.jpg" alt="Фото инструктора"></div>
+              <div class="trainer__info ">
+                <p class="trainer__name">Алена Аленова</p>
+                <p class="trainer__position">Авиатехник</p>
+              </div>
             </div>
           </div>
         </div>

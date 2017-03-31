@@ -60,5 +60,10 @@ $(document).ready(function(){
     else
       $('span.counter__counting--secs').text("0" + secs);
   }
+
+  $('.questions__item').click(function(){
+    $(this).toggleClass('questions__item--open');
+    $(this).children().toggleClass('questions__description--open');
+  });
 });
 

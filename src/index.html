@@ -17,9 +17,9 @@
             <li class="main-nav__item"><a class="main-nav__link" href="#short">Кто мы</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#gallery">Фотографии</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#about">План полета</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Заказать</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Команда</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#cost">Заказать</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#team">Команда</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
           </ul>
           <a href="#" class="toggler" id="toggler"><span></span></a>
         </div>
@@ -45,8 +45,8 @@
               <h2 class="promo__subtitle-content">Романтическая прогулка</h2>
             </li>
           </ul>
-          <a href="#" class="btn-more">Подробнее</a>
-          <a href="#" class="btn-more__arrow"><svg width="18" height="29"><use xlink:href="#arrow"></use></svg></a>
+          <a href="#about" class="btn-more">Подробнее</a>
+          <a href="#about" class="btn-more__arrow"><svg width="18" height="29"><use xlink:href="#arrow"></use></svg></a>
         </div>
       </div>
 
@@ -143,7 +143,7 @@
       </div>
 
 
-      <div class="cost">
+      <div class="cost" id="cost">
         <div class="cost__container">
           <div class="cost__row">
             <div class="cost-description">
@@ -273,7 +273,7 @@
         </div>
       </div>
 
-      <div class="team">
+      <div class="team" id="team">
         <div class="team__container">
           <div class="team__title">Команда инструкторов</div>
           <div class="team__row">
@@ -337,13 +337,13 @@
         </div>
       </div>
 
-      <div class="contacts">
+      <div class="contacts" id="contacts">
         <div class="contacts__container">
+          <div class="airport">
+            <p class="airport__message">Запишите адрес аэропорта</p>
+             <p class="airport__address">Всеволжск, улица Аэродромная 19а</p>
+          </div>
           <div class="contacts__row">
-            <div class="aeroport">
-              <p class="aeroport__message">Запишите адрес аэропорта</p>
-              <p class="aeroport__address">Всеволжск, улица Аэродромная 19а</p>
-            </div>
             <div class="office">
               <p class="office__title">Наш офис в Питере:</p>
               <p class="office__address">Литейный 14Б<br/>12:00 - 19:00</p>
@@ -355,16 +355,16 @@
               <p class="office__phone">746-67-33</p>
             </div>
             <div class="social">
-              <a class="social-mail" href="mailto:mnebyvnebo@gmail.com">mnebyvnebo@gmail.com</a>
+              <a class="social__mail" href="mailto:mnebyvnebo@gmail.com">mnebyvnebo@gmail.com</a>
               <div class="social-networks">
                 <a href="#" class="social-networks__item">
-                  <svg></svg>
+                  <svg width="22" height="22" fill="#444" ><use xlink:href="#vk"></use></svg>
                 </a>
                 <a href="#" class="social-networks__item">
-                  <svg></svg>
+                  <svg width="22" height="22" fill="#444"><use xlink:href="#fb"></use></svg>
                 </a>
                 <a href="#" class="social-networks__item">
-                  <svg></svg>
+                  <svg width="22" height="22" fill="#444"><use xlink:href="#instagram"></use></svg>
                 </a>
               </div>
             </div>
@@ -375,15 +375,16 @@
       <footer class="page-footer">
         <div class="page-footer__container">
           <div class="page-footer__row">
-            <div class="logo"><img src="" alt=""></div>
-            <ul class="main-nav">
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Кто мы</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">План полета</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Заказать</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Команда</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+            <div class="logo">Монгольфьеркин и КО</div>
+            <ul class="main-nav" id="nav">
+              <li class="main-nav__item"><a class="main-nav__link" href="#short">Кто мы</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#gallery">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#about">План полета</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#cost">Заказать</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#team">Команда</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
             </ul>
+            <a href="#" class="up" id="up"><span></span></a>
           </div>
         </div>
       </footer>

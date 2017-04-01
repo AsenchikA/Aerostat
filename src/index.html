@@ -9,11 +9,11 @@
   <body>
   @@include('img/sprite-svg.svg')
 
-    <header class="page-header">
+    <header class="page-header" id="page-header">
       <div class="page-header__container">
         <div class="page-header__row">
           <div class="logo">Монгольфьеркин и КО</div>
-          <ul class="main-nav" id="nav">
+          <ul class="main-nav" id="nav-header">
             <li class="main-nav__item"><a class="main-nav__link" href="#short">Кто мы</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#gallery">Фотографии</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="#about">План полета</a></li>
@@ -28,7 +28,7 @@
 
     <main>
 
-      <div class="promo">
+      <div class="promo" id="promo">
         <div class="promo__container">
           <h1 class="promo__title">Организация полетов на воздушных шарах</h1>
           <ul class="promo__subtitle-list">
@@ -372,11 +372,11 @@
         </div>
       </div>
 
-      <footer class="page-footer">
+      <footer class="page-footer" id="page-footer">
         <div class="page-footer__container">
           <div class="page-footer__row">
             <div class="logo">Монгольфьеркин и КО</div>
-            <ul class="main-nav" id="nav">
+            <ul class="main-nav">
               <li class="main-nav__item"><a class="main-nav__link" href="#short">Кто мы</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="#gallery">Фотографии</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="#about">План полета</a></li>
@@ -384,7 +384,7 @@
               <li class="main-nav__item"><a class="main-nav__link" href="#team">Команда</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
             </ul>
-            <a href="#" class="up" id="up"><span></span></a>
+            <a href="#page-header" class="up" id="up"><span></span></a>
           </div>
         </div>
       </footer>

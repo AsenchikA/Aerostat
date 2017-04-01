@@ -7,6 +7,26 @@ $(document).ready(function(){
     '/css/font_firasans_woff2.css?v=1'   // откуда тянуть CSS с закодированным в base64 форматом WOFF2
   );
 
+  //плавная прокрутка страницы
+
+  function anchorScroll(boxAnchorLink){
+
+    $(boxAnchorLink + ' a').on('click', function(e){
+      e.preventDefault();
+      var attr = $(this).attr('href').substring(1);
+      var currentPosition = $(document).scrollTop();
+      var idPosition = $('#'+attr).offset().top;
+      var scrollTime = Math.abs(currentPosition - idPosition) / 3;
+      $('body,html').animate({'scrollTop':idPosition},scrollTime);
+    });
+
+};
+
+
+anchorScroll('#page-header');
+anchorScroll('#page-footer');
+anchorScroll('#promo');
+
   // бургер в header
 
   var toggler = document.getElementById('toggler');
@@ -14,7 +34,7 @@ $(document).ready(function(){
     e.preventDefault();
     toggler.classList.toggle('toggler--close');
 
-    document.getElementById('nav').classList.toggle('main-nav--visible');
+    document.getElementById('nav-header').classList.toggle('main-nav--visible');
   };
 
   //галерея
@@ -75,6 +95,8 @@ $(document).ready(function(){
     else
       $('span.counter__counting--secs').text("0" + secs);
   }
+
+  //раскрытие блоков вопросов при нажатии
 
   $('.questions__item').click(function(){
     $(this).toggleClass('questions__item--open');

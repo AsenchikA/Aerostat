@@ -34,6 +34,21 @@ $(document).ready(function(){
     }
   });
 
+    $('#reviews__slider').owlCarousel({
+    loop: true,
+    nav: true,
+    navClass: ['reviews__arrows reviews__arrows--prev','reviews__arrows reviews__arrows--next'],
+    navText: ['',''],
+    responsive : {
+      0 : {
+        items: 1,
+      },
+      1200 : {
+        items: 2,
+      }
+    }
+  });
+
   //счетчик "До ближайшего полета осталось:"
 
   var deadline = '2017-12-31';

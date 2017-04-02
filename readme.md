@@ -1,3 +1,7 @@
+gh-pages:
+
+https://asenchika.github.io/Aerostat/
+
 Установка: `npm i`.
 
 Запуск: `npm start`.

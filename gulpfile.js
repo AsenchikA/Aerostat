@@ -164,7 +164,6 @@ gulp.task('js', function () {
       dirs.source + '/js/jquery-3.1.0.min.js',
       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
       dirs.source + '/js/owl.carousel.min.js',
-      dirs.source + '/js/font_loading.js',
       dirs.source + '/js/script.js',
     ])
     .pipe(plumber({ errorHandler: onError }))
@@ -173,57 +172,25 @@ gulp.task('js', function () {
     .pipe(gulp.dest(dirs.build + '/js'));
 });
 
-// ЗАДАЧА: Кодирование в base64 шрифта в формате WOFF
-gulp.task('css:fonts:woff', function (callback) {
-  let fontCssPath = dirs.source + '/fonts/font_firasans_woff.css'; // с каким исходным файлом работаем
-  if(fileExist(fontCssPath) !== false) { // если исходный файл существует, продолжим
-    return gulp.src(fontCssPath)
-      .pipe(plumber({ errorHandler: onError }))
-      .pipe(base64({                   // ищем в CSS файле подключения сторонних ресурсов, чтоб закодировать base64 и вставить прямо в файл
-        // baseDir: '/',
-        extensions: ['woff'],         // только указанного тут формата ресурсов
-        maxImageSize: 1024*1024,      // максимальный размер в байтах
-        deleteAfterEncoding: false,   // не удаляем исходный ресурс после работы!
-        // debug: true
-      }))
-      .pipe(gulp.dest(dirs.build + '/css')); // пишем в папку билда, именно оттуда сей файл будет стягиваться JS-ом
-  }
-  else {
-    console.log('Файла WOFF, из которого генерируется CSS с base64-кодированным шрифтом, нет');
-    console.log('Отсутствующий файл: ' + fontCssPath);
-    callback();
-}
+// ЗАДАЧА: Копирование шрифтов
+gulp.task('fonts', function () {
+  return gulp.src([
+        dirs.source + '/fonts/*.{woff,woff2}',      // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+      ],
+      {since: gulp.lastRun('fonts')}                          // оставим в потоке обработки только изменившиеся от последнего запуска задачи (в этой сессии) файлы
+    )
+    .pipe(plumber({ errorHandler: onError }))
+    .pipe(newer(dirs.build + '/fonts'))                       // оставить в потоке только новые файлы (сравниваем с содержимым папки билда)
+    .pipe(gulp.dest(dirs.build + '/fonts'));                  // записываем файлы (путь из константы)
 });
 
-// ЗАДАЧА: Кодирование в base64 шрифта в формате WOFF2
-gulp.task('css:fonts:woff2', function (callback) {
-  let fontCssPath = dirs.source + '/fonts/font_firasans_woff2.css'; // с каким исходным файлом работаем
-  if(fileExist(fontCssPath) !== false) { // если исходный файл существует, продолжим
-    return gulp.src(fontCssPath)
-      .pipe(plumber({ errorHandler: onError }))
-      .pipe(base64({                   // ищем в CSS файле подключения сторонних ресурсов, чтоб закодировать base64 и вставить прямо в файл
-        // baseDir: '/',
-        extensions: ['woff2'],         // только указанного тут формата ресурсов
-        maxImageSize: 1024*1024,       // максимальный размер в байтах
-        deleteAfterEncoding: false,    // не удаляем исходный ресурс после работы!
-        // debug: true
-      }))
-      .pipe(replace('application/octet-stream;', 'application/font-woff2;')) // костыль, ибо mime плагин для woff2 определяет некорректно
-      .pipe(gulp.dest(dirs.build + '/css')); // пишем в папку билда, именно оттуда сей файл будет стягиваться JS-ом
-  }
-  else {
-    console.log('Файла WOFF2, из которого генерируется CSS с base64-кодированным шрифтом, нет');
-    console.log('Отсутствующий файл: ' + fontCssPath);
-    callback();
-  }
-});
 
 // ЗАДАЧА: Сборка всего
 gulp.task('build', gulp.series(                             // последовательно:
   'clean',                                                  // последовательно: очистку папки сборки
   'svgstore',
   'png:sprite',
-  gulp.parallel('less', 'img', 'js', 'css:fonts:woff', 'css:fonts:woff2'),
+  gulp.parallel('less', 'img', 'js', 'fonts'),
   'pug',
   'html'                                                    // последовательно: сборку разметки
 ));
